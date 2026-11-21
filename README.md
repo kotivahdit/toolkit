@@ -30,6 +30,10 @@ Built and run by *Kotivahdit*, a volunteer honeypot network from Finland (sensor
            dashboard + impact metrics
 ```
 
+## Field notes
+
+* 📄 [Attackers are fingerprinting LLM honeypots – a structured probe battery](docs/llm-honeypot-fingerprinting.md)
+
 ## What we have seen (first days)
 
 * Credential thieves (Androxgh0st-style) fetched bait `.env` files and tried the honeytoken AWS key **within 2–3 minutes** – mostly SES calls to send spam.
