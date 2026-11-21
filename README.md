@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/logo.png" alt="Kotivahdit" width="220"></p>
+
 # Kotivahdit toolkit
 
 🔴 **[Live numbers](https://kotivahdit.github.io)** · 🧱 **[Hourly IP blocklist](https://github.com/kotivahdit/blocklist)**
