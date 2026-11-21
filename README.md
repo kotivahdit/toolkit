@@ -1,6 +1,6 @@
 # Kotivahdit toolkit
 
-🔴 **[Live numbers: kotivahdit.github.io](https://kotivahdit.github.io)**
+🔴 **[Live numbers](https://kotivahdit.github.io)** · 🧱 **[Hourly IP blocklist](https://github.com/kotivahdit/blocklist)**
 
 **Small, dependency-free traps that waste attackers' time – and turn what they do into abuse reports.**
 Built and run by *Kotivahdit*, a volunteer honeypot network from Finland (sensors in Stockholm and Iowa).
