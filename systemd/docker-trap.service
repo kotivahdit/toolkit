@@ -1,0 +1,21 @@
+[Unit]
+Description=Docker-ansa (2375, väärennetty Docker API)
+After=network-online.target
+[Service]
+ExecStart=/usr/bin/python3 -I /opt/kotivahdit/docker_trap.py
+DynamicUser=yes
+StateDirectory=dockeransa
+StateDirectoryMode=0755
+CapabilityBoundingSet=
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+RestrictAddressFamilies=AF_INET AF_INET6
+MemoryMax=60M
+TasksMax=80
+Restart=always
+RestartSec=10
+[Install]
+WantedBy=multi-user.target
