@@ -2,7 +2,7 @@
 
 # Kotivahdit toolkit
 
-🔴 **[Live numbers](https://kotivahdit.github.io)** · 🧱 **[Hourly IP blocklist](https://github.com/kotivahdit/blocklist)**
+🔴 **[Live numbers](https://kotivahdit.github.io)** · 🧱 **[Hourly IP blocklist](https://github.com/kotivahdit/blocklist)** · 🔎 **[sessionkind](https://github.com/kotivahdit/sessionkind)** (human / bot / LLM-agent triage)
 
 **Small, dependency-free traps that waste attackers' time – and turn what they do into abuse reports.**
 Built and run by *Kotivahdit*, a volunteer honeypot network from Finland (sensors in Stockholm and Iowa).
@@ -21,6 +21,7 @@ Built and run by *Kotivahdit*, a volunteer honeypot network from Finland (sensor
 | [`docker-trap/docker_trap.py`](docker-trap/docker_trap.py) | Fake open Docker Engine API (2375). Answers like Docker 24 but runs nothing; logs container creates, exec commands, images, payload URLs and Monero wallets. |
 | [`llm-shim/llm_shim.py`](llm-shim/llm_shim.py) | **Detection-resistant LLM honeypot shim.** Sits between an LLM honeypot (e.g. Beelzebub) and Ollama. Attackers fingerprint LLM honeypots with deterministic probes (`printf`, arithmetic, `set --` positional args, shell functions). Commands made only of safe shell builtins run in a **real, isolated `dash`** (no network namespace, `nobody`, no-new-privs, 64 MB, 1 s); everything else goes to the LLM. |
 | [`phish-watch/phish_watch.py`](phish-watch/phish_watch.py) | Certificate Transparency watch (crt.sh) for brand look-alikes; opens the site and reports pages with login/card forms to Netcraft (Netcraft verifies before takedown). Never reports pages that redirect to the official domain. |
+| [`sessionkind`](https://github.com/kotivahdit/sessionkind) *(separate repo)* | Passively classify the operator behind a captured SSH/shell session as **human / script / LLM-driven agent**, with an explanation for every verdict. No interaction with the attacker. Validated on this network's own honeypot. |
 
 ## How it fits together
 
